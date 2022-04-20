@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); /* sans-serif */
+
+:root {
+    --boxes-border: #e0e0e0;
+
+    --fnt-light: #e0e0e0;
+    --fnt-dark: #d0d0d0;
+
+    --btn-border: #c0c0c0; 
+    --btn-back: #909090;
+
+    --container-clr1: #505050;
+    --container-clr2: #303030;
+
+    --shadow: #00000080;
+    --ipt-border: #000000;
+    --ipt-back: #505050;
+
+    --backcolor1: #ff0026;
+    --backcolor2: #005eff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, var(--backcolor1), var(--backcolor2));
+    font-family: 'Anton', sans-serif;
+    color: var(--fnt-light);
+}
+
+body > h2 {
+    width: 20vh;
+    margin-bottom: -25px;
+    padding: 7px 25px;
+    text-align: center;
+    transform: skewY(-3deg);
+    border: 2px solid var(--boxes-border);
+    border-radius: 10px;
+    background: linear-gradient(45deg, var(--backcolor2), var(--backcolor1));
+    font-size: x-large;
+    color: var(--fnt-dark);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vh;
+    min-height: 40vh;
+    border-radius: 5vh;
+    border: 2px solid var(--boxes-border);
+    background: linear-gradient(-45deg, var(--container-clr2), var(--container-clr1)) ;
+    box-shadow: 4px 4px 4px var(--shadow);
+}
+
+.container > p {
+    margin: 0 2vh;
+    font-size: large;
+}
+
+.inputs {
+    margin: 0.5vh;
+}
+
+.inputs input:first-child {
+    width: 30vh;
+    border: 1px solid var(--ipt-border);
+    border-radius: 0.7vh;
+    background-color: var(--ipt-back);
+    font-family: 'Anton', sans-serif;
+    color: var(--fnt-light);
+}
+
+.inputs input:last-child {
+    cursor: pointer;
+}
+
+button {
+    margin: 0.3vh;
+    padding: 0.5vh 1.5vh;
+    border: 2px solid var(--btn-border);
+    border-radius: 1vh;
+    background-color: var(--btn-back);
+    font-family: 'Anton', sans-serif;
+    font-size: x-large;
+    transition: all 400ms;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid var(--fnt-light);
+    background-color: var(--backcolor1);
+    color: var(--fnt-dark);
+}
