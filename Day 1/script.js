@@ -6,7 +6,7 @@ const msg = {
   equals : 'The elements are exactly the same',
   differentType : 'The elements are the same, but the type are different',
   different : 'The elements are different',
-  default : ''
+  default : 'Enter the values and check the result'
 }
 
 document.querySelector(".container > button").addEventListener("click", () => {
